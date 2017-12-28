@@ -1,0 +1,17 @@
+<p>
+  contact-list works!
+</p>
+<rb-contact-item 
+  *ngFor="let ContactObj of ContactObjArr"
+  [ContactObj]=ContactObj
+  (selectedContactObj)="onReceivingContactFromContactItem($event)"
+></rb-contact-item>
+
+<!-- <ul>
+  <li *ngFor="let ContactObj of ContactObjArr">
+    {{ContactObj.name}}
+    <button mat-button (click)="fetchContactDetails()">GET DETAILS</button>
+    <button mat-button (click)="viewContact(ContactObj)">View Contact</button>
+  </li>
+</ul> -->
+Name : <input type="text" [(ngModel)]="selectedContactObj.name" *ngIf="selectedContactObj">

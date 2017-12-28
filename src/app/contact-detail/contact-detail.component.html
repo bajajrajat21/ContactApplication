@@ -1,0 +1,29 @@
+<p>
+  contact-detail works!
+</p>
+<table *ngIf="selectedContactObj">
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+        Id
+    </th>
+    <th>
+        Contact No
+    </th>
+  </tr>
+  <tr>
+    <td>
+      {{selectedContactObj.name}}
+    </td>
+    <td>
+        {{selectedContactObj.id}}
+    </td>
+    <td>
+        {{selectedContactObj.phoneNo}}
+    </td>
+  </tr>
+  <button mat-button (click)="goBack()">Go Back</button>
+</table>
+

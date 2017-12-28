@@ -1,0 +1,14 @@
+import { Contact } from "./contact";
+
+export const ContactConst : Contact[] = [
+    {
+        name:'Rajat Bajaj',
+        id:1,
+        phoneNo:7406322122
+    },
+    {
+        name:'Shaifali Yadav',
+        id:2,
+        phoneNo:9731791787
+    }
+]
